@@ -1,0 +1,119 @@
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg , #d86a21 , #ef2626);
+    padding: 10px;
+}
+
+.todo{
+    background: #fff;
+    width: 100%;
+    max-width: 540px;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 20px;
+}
+
+.todo h2{
+    display: flex;
+    color: #002765;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.todo h2 img{
+    max-width: 32px;
+    margin-left: 10px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #c5d2fa;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+#input-text{
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+
+button{
+    outline: none;
+    border: none;
+    padding: 16px 30px;
+    background: #c934f6;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    cursor: pointer;
+  user-select: none;  
+  position: relative;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    background-image: url(un.jpeg);
+    background-size: cover;
+    /* background-position: center; */
+top: 8px;
+left: 8px;
+}
+
+ul li.check{
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.check::before{
+    background-image: url(check.jpeg);
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font: size 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover{
+    background: #c5d2fa ;
+}
+
+.made{
+color: #fff;
+margin-left: 44%;
+margin-top: 150px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 16px;
+}
